@@ -1,0 +1,36 @@
+body.welcome {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splash-screen {
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.logo-fade {
+  width: 200px;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.language-select {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
