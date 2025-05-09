@@ -1,3 +1,4 @@
+/* Tipografía y reset general */
 body {
   font-family: 'Alegreya', serif;
   background-color: white;
@@ -6,12 +7,14 @@ body {
   padding: 0;
 }
 
+/* Header */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -24,6 +27,7 @@ body {
   gap: 20px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .nav-menu a {
@@ -37,10 +41,12 @@ body {
   border-bottom: 2px solid black;
 }
 
+/* Secciones */
 .section {
   padding: 60px 40px;
   max-width: 800px;
   margin: auto;
+  text-align: center;
 }
 
 .section h2 {
@@ -54,6 +60,7 @@ body {
   color: #555;
 }
 
+/* Imagen decorativa */
 .teclado {
   display: block;
   margin: 40px auto;
@@ -61,11 +68,15 @@ body {
   opacity: 0.7;
 }
 
+/* Botones CTA */
 .cta-buttons {
   display: flex;
   justify-content: space-around;
   padding: 60px 40px;
   font-weight: bold;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
 }
 
 .cta-buttons a {
@@ -77,4 +88,61 @@ body {
 
 .cta-buttons a:hover {
   border-bottom: 2px solid black;
+}
+
+/* 🔁 Media Queries: Responsive Design */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .logo {
+    width: 60px;
+  }
+
+  .main-header {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+
+  .cta-buttons a {
+    font-size: 1rem;
+  }
 }
