@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leuda Studio</title>
+  <title>LEUDA</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="../images/logo.leuda.png" alt="Logo Leuda" />
-    </div>
-    <nav class="nav-menu">
-      <a href="#">Presentación</a>
-      <a href="#">Proceso</a>
-      <a href="#">Nosotrxs</a>
-      <a href="#">Proyectos</a>
-      <a href="#">Contacto</a>
+  <header class="main-header">
+    <img src="../images/logo.leuda.png" alt="Leuda Logo" class="logo" />
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Presentación</a></li>
+        <li><a href="#">Proceso</a></li>
+        <li><a href="#">Nosotrxs</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section class="section horizontal">
+    <section class="section">
       <div class="text-block">
         <h1>¿Qué es?</h1>
         <p>Somos un estudio de guion y desarrollo de IPs (Intellectual Properties) para todo tipo de proyectos audiovisuales.</p>
       </div>
-      <div class="image-block">
-        <img src="../images/teclado.index.png" alt="Teclado Leuda" class="teclado" />
-      </div>
+      <img src="../images/teclado.png" alt="Decorativo" class="teclado" />
     </section>
 
     <section class="section">
@@ -42,10 +40,10 @@
       <p>Somos una asociación de guionistas latinoamericanos, que trabajan en red en distintos territorios. Contamos con una vasta experiencia en géneros y formatos diversos, en distintas escalas de producción.</p>
     </section>
 
-    <section class="cta-section">
+    <div class="cta-buttons">
       <a href="#">Contratar un servicio</a>
       <a href="#">Conocer nuestro proceso</a>
-    </section>
+    </div>
   </main>
 </body>
 </html>
